@@ -1,0 +1,12 @@
+{
+  "name": "first_pack",
+  "version": "1.0.0",
+  "description": "just practice",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node script.js"
+  },
+  "author": "Kiirynn",
+  "license": "ISC"
+}
