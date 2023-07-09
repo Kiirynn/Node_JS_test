@@ -11,6 +11,33 @@ body{
     --border-radius1: 10px;
 }
 
+h2{
+    margin-top: 35px;
+    margin-bottom: 8px;
+}
+
+
+nav{
+    margin-bottom: 3rem; 
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    letter-spacing: 7px;
+}
+
+
 header{
    display: flex;
    flex-direction: column;
@@ -20,7 +47,7 @@ header{
    margin-bottom: 25px;
    border-radius: 10px;
    border: 2px solid whitesmoke;
-   color: var(--primary-color);
+   color: var(--primary-colors);
 }
 
 .split{
@@ -28,26 +55,39 @@ header{
 }
 
 
-.page1, .page2, .page3{
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     margin-bottom: 25px;
-    background-color: var(--secondary-color);
+    background-image: linear-gradient(to right, var(--secondary-color), #863CBC );
     border-radius: var(--border-radius1);
     border: 2px solid whitesmoke;
     color: black;
-    
+    padding: 20px;
 }
 
 .img-box{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     text-align: center;
-    align-content: center;
+   
    
 }
 
-.tory, .kii{
+.tory, .kii, .pexel{
     border: 2px solid whitesmoke;
-    border-radius: var(--border-radius1)
+    border-radius: var(--border-radius1);
+    width: 700px;
 }
 
+.dub-sec{
+    display: flex;
+    justify-content: center;
+}
+
+.one{
+    margin: 10px;
+}
