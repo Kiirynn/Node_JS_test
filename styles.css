@@ -31,6 +31,20 @@ ul{
     
 }
 
+.ul2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+}
+
+.li2{
+    padding: 5px;
+}
+
 a{
     text-decoration: none;
     color: aliceblue;
@@ -51,16 +65,17 @@ header{
 }
 
 .split{
-    padding: 20px
+    padding: 8px;
 }
 
 
-.page{
+.page, footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     margin-bottom: 25px;
+    margin-top: 20px;
     background-image: linear-gradient(to right, var(--secondary-color), #863CBC );
     border-radius: var(--border-radius1);
     border: 2px solid whitesmoke;
@@ -90,4 +105,31 @@ header{
 
 .one{
     margin: 10px;
+}
+
+.toryBtn, .prev, .next{
+    padding: 10px;
+    border-radius: var(--border-radius1);
+    border: 2px solid whitesmoke;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    
+}
+
+.toryBtn:hover, .next:hover, .prev:hover{
+    color: white;
+    transform: scale(1.1)
+}
+
+.btndiv1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.prev, .next{
+    margin: 0px 20em;
+    
+   
 }
