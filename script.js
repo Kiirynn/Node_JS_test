@@ -10,7 +10,6 @@ let i = 0;
 
 
 document.querySelector('.prev').addEventListener("click", prevBtn)
-
 document.querySelector('.next').addEventListener("click", nextBtn)
     
 
@@ -20,7 +19,9 @@ function prevBtn(){
     if(i < 0){
         i = photos.length - 1 
     }
-    showImg()
+    showImg();
+    refireAnimation();
+    photoDiv1.classList.remove("animateRight")
 }
 
 
@@ -30,7 +31,25 @@ function nextBtn(){
        i = 0;
    }
 
-   showImg()
+   showImg();
+   refireAnimation2();
+   photoDiv1.classList.remove("animateLeft")
+}
+
+function refireAnimation(){
+    photoDiv1.classList.remove("animateLeft")
+
+    setTimeout(() => {
+        photoDiv1.classList.add("animateLeft")
+    }, 0);
+}
+
+function refireAnimation2(){
+    photoDiv1.classList.remove("animateRight")
+
+    setTimeout(() => {
+        photoDiv1.classList.add("animateRight")
+    }, 0);
 }
 
 

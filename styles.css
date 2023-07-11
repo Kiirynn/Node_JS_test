@@ -133,3 +133,42 @@ header{
     
    
 }
+
+.animateLeft{
+   animation: photoImageFadeLeft .3s ease forwards;
+}
+
+.animateRight{
+    animation: photoImageFadeRight .3s ease forwards;
+ }
+
+@keyframes photoImageFadeLeft{
+    from{
+           
+        transform: translateX(-100%);
+        transition: opacity 250ms ease-in, transform 400ms ease-in;
+    }
+    to{
+       
+        transform: translateX(0%);
+        transition: opacity 250ms ease-in, transform 400ms ease-in;
+      }
+    }
+
+
+    @keyframes photoImageFadeRight{
+
+        from{
+           
+            transform: translateX(150%);
+            transition: opacity 250ms ease-in, transform 400ms ease-in;
+        }
+        to{
+           
+            transform: translateX(0%);
+            transition: opacity 250ms ease-in, transform 400ms ease-in;
+        }
+
+
+
+    }
